@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edutrack</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        EduTrack - Smart Student Management System &nbsp;<i
+          class="fa-solid fa-book"
+        ></i>
+      </h1>
+    </header>
+    <br />
+    <main>
+      <form action="">
+        <h3>Register Student</h3>
+
+        <label for="" class="loop">Name:</label><br />
+        <div class="feild">
+          <div class="icondiv"><i class="fa-solid fa-user fa-sm"></i></div>
+          <input type="text" autocomplete="off" id="name" />
+          <div class="icondiv">
+            <i class="fa-solid" style="color: #ff4d4d"></i>
+          </div>
+        </div>
+        <br />
+
+        <label for="" class="loop">Contact: </label><br />
+        <div class="feild">
+          <div class="icondiv">
+            <i class="fa-regular fa-id-badge fa-sm"></i>
+          </div>
+          <input type="text" autocomplete="off" id="Contact"  />
+          <div class="icondiv">
+            <i class="fa-solid" style="color: #ff4d4d"></i>
+          </div>
+        </div>
+        <br />
+
+        <div class="class_roll">
+          <div>
+            <label for="">Class: </label>
+            <div class="hola">
+              <div class="icondiv">
+                <i class="fa-solid fa-school fa-sm"></i>
+              </div>
+              <select name="" id="class">
+                <option value="L.K.G.">L.K.G.</option>
+                <option value="U.K.G.">U.K.G.</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+                <option value="7th">7th</option>
+                <option value="8th">8th</option>
+              </select>
+              <div class="icondiv">
+                <i class="fa-solid" style="color: #ff4d4d"></i>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label style="margin-left: 5px;" class="loop" for="">ID:</label>
+            <div class="bhola">
+              <div class="icondiv">
+                <i class="fa-solid fa-address-book fa-sm"></i>
+              </div>
+              <input type="text" autocomplete="off" id="ID" />
+              <div class="icondiv">
+                <i class="fa-solid" style="color: #ff4d4d"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <label for="" class="loop">Address:</label><br />
+        <div class="feild">
+          <div class="icondiv">
+            <i class="fa-solid fa-location-dot fa-sm"></i>
+          </div>
+          <input type="text" autocomplete="off" id="Address" />
+          <div class="icondiv">
+            <i class="fa-solid" style="color: green"></i>
+          </div>
+        </div>
+        <br />
+        <label for="" class="loop">Email:  </label><br />
+        <div class="feild">
+          <div class="icondiv">
+            <i class="fa-solid fa-envelope fa-sm"></i>
+          </div>
+          <input type="text" autocomplete="off" id="Email" />
+          <div class="icondiv">
+            <i class="fa-solid" style="color: green"></i>
+          </div>
+        </div>
+        <br />
+        
+        <label for="male" id="male_label">
+          <div style="background-color: white;" class="gender" id="gender1"><i class="fas fa-male"></i></div>
+          
+        </label>
+        <input type="radio" value="male" id="male" name="gender" checked/>
+        <label for="female" id="female_label" >
+            <div class="gender" id="gender2"><i class="fas fa-female"></i></div >
+            </label>
+        <input type="radio" value="female" id="female" name="gender" /> <br />
+   <span class="genderText" id="male_text">male</span>
+   <span class="genderText" id="female_text">female</span>
+        <button id="form_submit_btn">Add</button>
+      </form>
+      <div id="overlay" class="overlay"></div>
+      <div id="successPopup" class="popup">
+        <p>Successfully added!</p>
+        <button  id ="popup_btn">OK</button>
+      </div>
+      
+    </main>
+
+
+    
+<div class="heading">
+  <h2>Students details</h2>
+</div>
+
+  
+
+    <section class="container">
+      <table>
+         <thead>
+   <tr>
+    <th>NO.</th>
+    <th>Name</th>
+    <th>Class</th>
+    <th>ID</th>
+    <th>Gender</th>
+    <th>Contact</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Edit/Delete</th>
+   </tr>
+ </thead>
+   <tbody id="Studentlist">
+   <tr>
+    
+    </tr>
+ </tbody>
+      </table>
+     </section>
+
+
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>
