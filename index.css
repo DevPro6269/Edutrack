@@ -1,0 +1,239 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input {
+    background-color: transparent;
+}
+
+body {
+    background: linear-gradient(45deg, #FF5733, #FFBD33, #75FF33, #33FF57, #33FFBD, #3375FF, #5733FF);
+    height: 100vh; /* Make sure it covers the entire viewport */
+    background-size: 300% 300%; /* For animation effect */
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+h3{
+    margin-left: 90px;
+    padding-top: 10px;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+header{
+   width: 80%;
+   height: 15%;
+   background-color: rgba(255, 146, 164, 0.945);
+   margin: auto;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+header > h1{
+    text-shadow: 2px 3px 3px white;
+}
+form{
+    margin-top: 20px;
+   background-color: rgba(255, 255, 255, 0.305);
+   border-radius: 20px;
+    width: 30%;
+    margin: auto;
+    /* display: flex ;
+    flex-direction: column;
+    align-items: center; */
+}
+input[type="text"]{
+    outline: none;
+    border: none;
+    height: 95%;
+    width: 100%;
+    background: transparent !important;
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+}
+input[type="radio"]{
+    visibility: hidden;
+}
+
+select{
+    height: 95%;
+    width: 100%;
+    background: transparent;
+    color: black;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+label{
+    margin-left: 25px;
+    font-size: small;
+}
+
+.gender{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#male_label{
+    margin-left: 70px;
+}
+#female_label,#male_label{
+    display: inline-block;
+}
+
+
+.class_roll{
+  display: flex;
+  gap: 10px;
+}
+
+.feild{
+display: flex;
+height: 22px;
+width: 275px;
+border-radius: 5px;
+border: 1px solid black;
+gap: 10px;
+margin: auto;
+}
+.hola{
+         margin-left: 26px;
+        display: flex;
+        height: 22px;
+        width: 130px;
+        border-radius: 5px;
+        border: 1px solid black;
+        gap: 10px;
+        /* margin: auto; */
+}
+
+.bhola{
+    
+    display: flex;
+    height: 22px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid black;
+    gap: 10px;
+    margin: auto;
+}
+.icondiv{
+   margin-left: 5px;
+   margin-right: 5px;
+    height: 95%px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #FF5733, #FFBD33, #75FF33, #33FF57, #33FFBD, #3375FF, #5733FF);
+    animation: gradientAnimation 15s ease infinite;
+    background-size: 300% 300%; /* For animation effect */
+    color: black;
+    margin: 20px;
+    margin-left: 110px;
+    padding: 5px;
+}
+
+#male_text{
+    margin-left: 80px;
+  
+    /* text-decoration-color: #33FF57; */
+}
+#female_text{
+    margin-left: 60px;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .popup p {
+    margin: 0 0 10px;
+  }
+  
+  .popup button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Overlay to dim the background */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  
+  table,th,td,tr{
+    border: 1px solid black;
+  }
+
+  .container{
+    margin-left: 160px;
+        max-height: 300px; /* Set a max-height to create overflow */
+        width: fit-content;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+.heading{
+    width: 70%;
+    height: 15%;
+    background-color: rgba(255, 146, 164, 0.945);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+
